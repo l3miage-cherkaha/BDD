@@ -16,4 +16,5 @@ public class User {
 
     @OneToOne
     private Session id_session;
+
 }

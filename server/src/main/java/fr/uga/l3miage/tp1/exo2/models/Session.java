@@ -16,4 +16,5 @@ public class Session {
 
    @OneToOne(mappedBy = "id_session")
     private User id_user;
+
 }
