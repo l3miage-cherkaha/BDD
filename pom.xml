@@ -10,6 +10,16 @@
     <modules>
         <module>server</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
 
     <!--Indispensable pour faire démarrer spring boot, ici maven récupérer le pom.xml qui correspond à cette dépendance-->
     <parent>
