@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 public class AssociationEntity {
     @Id
-   private String name;
+    private String name;
 
     @Column(nullable=false)
     private String presidentName;
@@ -16,8 +16,10 @@ public class AssociationEntity {
     @Column(nullable=false)
     private String treasurerName;
 
+    @Column
     private String secretaryName;
 
+    @Column
     private AssociationType associationType;
 
     @ManyToOne
