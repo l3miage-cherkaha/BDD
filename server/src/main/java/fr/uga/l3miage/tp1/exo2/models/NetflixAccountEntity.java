@@ -9,14 +9,18 @@ import javax.persistence.*;
 public class NetflixAccountEntity {
 
     @Id
+    @Column
     private Integer id;
 
+    @Column
     private Integer nb_device;
 
-    @Enumerated(EnumType.STRING)
+   @Column
+   @Enumerated(EnumType.STRING)
     private TypeAccount typeAccount;
 
-    private String uuid_user;
+   @Column
+   private String uuid_user;
 
     @OneToOne(mappedBy = "account")
     private NetflixUserEntity user;
