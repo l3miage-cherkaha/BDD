@@ -18,6 +18,6 @@ public class BrandMiageEntity {
     private BrandType type;
     // une marque a un type soit Alimentaire, Hygiene, Autre
 
-    @OneToMany
+    @OneToMany(mappedBy = "brand")
     private Set<ProductEntity> products;
 }

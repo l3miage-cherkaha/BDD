@@ -14,7 +14,7 @@ public class FederationEntity {
     @Column
     private boolean isFageMembership;
 
-    @OneToMany
+    @OneToMany(mappedBy = "federation")
     private Set<AssociationEntity> associations;
 }
 
