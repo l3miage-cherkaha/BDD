@@ -14,7 +14,7 @@ public class User {
     private boolean SSO;
     OffsetDateTime lastConnexion;
 
-    @OneToOne
-    private Session id_session;
+    @OneToOne(mappedBy = "user")
+    private Session session;
 
 }

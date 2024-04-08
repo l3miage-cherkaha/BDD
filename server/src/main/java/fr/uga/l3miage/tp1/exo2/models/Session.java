@@ -14,7 +14,7 @@ public class Session {
    private String currentDir;
    private boolean lock;
 
-   @OneToOne(mappedBy = "id_session")
-    private User id_user;
+   @OneToOne
+    private User user;
 
 }
